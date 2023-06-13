@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <title>Early Interventions and Solutions for Challenging Children</title>
+</head>
+
+<body>
+  <div class="navbar">
+    <ul>
+      <li><a href="{{ url_for('home') }}">
+          <h2>Home</h2>
+        </a></li>
+      <li><a href="{{ url_for('about') }}">
+          <h2>About Me</h2>
+        </a></li>
+      <li><a href="{{ url_for('contact') }}">
+          <h2>Contact</h2>
+        </a></li>
+    </ul>
+  </div>
+
+  <div class="container">
+    <h1 id="title">About Me</h1>
+
+    <span>Hi there, I'm Claudia Guarente. Founder and Practitioner of Startup Interventions Ltd. Thank you for taking
+      the time to visit our site and learn more about how we can help. Please get in touch via our <a
+        href="{{ url_for('contact') }}">Contact Page</a>. </span>
+
+    <div class="section-container">
+      <div class="section">
+        <h2 class="toggle-section">About Me:</h2>
+      </div>
+      <div class="section-content">
+        <div class="image">
+          <img src="../static/images/mum_photo.png" alt="Headshot">
+        </div>
+
+        <p>With over 25 years' experience in dealing with children who experience difficulties in the classroom, I have
+          worked as a Teaching Assistant, Learning Mentor, Lead Professional for Student Inclusion and Safeguarding
+          Officer. I have studied or worked with professionals from many areas of children's services, which include:
+        </p>
+
+        <ul>
+          <li>Child Bereavement training from the Child Bereavement Trust, Bucks</li>
+          <li>Behaviour Management</li>
+          <li>Anger Management – trained by Primary PRU</li>
+          <li>Training From CAMHS and Educational Psychologist in Child Mental Health</li>
+          <li>Active Listening, Small Group work</li>
+          <li>Nurture Group Trained by Educational Psychologist and CAMHS team</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section-container">
+      <div class="section">
+        <h2 class="toggle-section">How we Help – the Specifics:</h2>
+      </div>
+      <div class="section-content">
+        <h3>With personalised SMART TARGETS</h3>
+        <ul>
+          <li>Specific: “To deliver a programme of. (ie Anger Management) for .......weeks that reduces the
+            number of situations where anger/bullying/other ............. is observed during a .....week period.</li>
+          <li>
+            Measureable: the evaluation and feedback (ie SDQ’s other analysis – quantative and
+            qualitative), get feedback from the students, not using their real names.
+          </li>
+          <li>Achievable: it will be agreed that the logistics of the Course or workshop is achieved in the time
+            allocated. It may be that further work will be crucial to the required outcomes (to be discussed).</li>
+          <li>
+            Relative: the workshops or course should be relative to the needs of students and easily
+            accessed by the students in a way that can be evaluated by them.
+          </li>
+          <li>Timely: the course should be conducted in a timely fashion that students can enjoy and take
+            something from.</li>
+        </ul>
+        <br>
+        <h3>Evaluation</h3>
+        <span>We will conduct evaluations for your records which will inform further work as necessary.</span>
+        <p>We will report back to you within a mutually agreed timeframe with our findings. We will advise
+          you of any further initiatives that may be of help to your students, with possible collaboration
+          with other professionals. We will book a review session with you and the students to obtain</p>
+
+      </div>
+    </div>
+    <div class="section-container">
+      <div class="section">
+        <h2 class="toggle-section">Certification:</h2>
+      </div>
+      <div class="section-content">
+        <div class="image">
+          <img src="../static/images/image_four.png" alt="Safeguarding">
+        </div>
+
+        <p>Safeguarding is everybody’s responsibility, and as a Safeguarding Officer in a secondary school
+          I have had 4 years of ongoing, in situ training and collaboration with Child Services (Social
+          Care), with supervision for my case load.</p>
+        <div class="image">
+          <img src="../static/images/dbs" alt="DBS">
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>
